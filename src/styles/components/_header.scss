@@ -27,7 +27,7 @@ header {
 		}
 
 		.mobile-button {
-			display: none;
+			display: none !important;
 			width: 35px;
 			height: 35px;
 			display: flex;
@@ -35,8 +35,8 @@ header {
 			justify-content: center;
 
 			@media (max-width:$mobile-break) {
-       display: flex;
-    }
+	       display: flex !important;
+	    }
 
     .btn {
     	width: 23px;
