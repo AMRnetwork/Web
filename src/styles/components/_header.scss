@@ -12,7 +12,7 @@ header {
 		align-items: center;
 		padding: 0 $col-vw/4;
 
-		 @media (max-width:$mobile-break) {
+		 @media (max-width:$tablet-break) {
        height: 60px;
     }
 		.logo {
@@ -34,7 +34,7 @@ header {
 			align-items: center;
 			justify-content: center;
 
-			@media (max-width:$mobile-break) {
+			@media (max-width:$tablet-break) {
 	       display: flex !important;
 	    }
 
@@ -74,7 +74,7 @@ header {
 		}
 
 		.nav {
-			@media (max-width:$mobile-break) {
+			@media (max-width:$tablet-break) {
        position: fixed;
        left: 0;
        top: 60px;
