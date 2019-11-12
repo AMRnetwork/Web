@@ -1,0 +1,24 @@
+.button {
+	padding: 0.75rem 1.25rem;
+	cursor: pointer;
+	display: inline-block;
+	background: $color1;
+	color: $color2;
+	font-family: $sans1;
+	font-weight: 900;
+	font-size: 1rem;
+	border: 1px solid $color1;
+	line-height: 1;
+	letter-spacing:1px;
+	text-transform: uppercase;
+	transition: $transition;
+
+	&.top {
+		margin-top: 1.25rem;
+	}
+
+	&:hover {
+		background: transparent;
+		color: $color1;
+	}
+}

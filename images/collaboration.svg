@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="304.072" height="303.298" viewBox="0 0 304.072 303.298">
+  <g id="Group_13" data-name="Group 13" transform="translate(-1140.279 -1225.144)">
+    <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(1173 1320)" fill="none" stroke="#f6f6f6" stroke-width="1">
+      <rect width="174" height="174" stroke="none"/>
+      <rect x="0.5" y="0.5" width="173" height="173" fill="none"/>
+    </g>
+    <g id="Rectangle_38" data-name="Rectangle 38" transform="translate(1205 1289)" fill="none" stroke="#f6f6f6" stroke-width="1">
+      <rect width="174" height="174" stroke="none"/>
+      <rect x="0.5" y="0.5" width="173" height="173" fill="none"/>
+    </g>
+    <g id="Rectangle_39" data-name="Rectangle 39" transform="translate(1235 1259)" fill="none" stroke="#f6f6f6" stroke-width="1">
+      <rect width="174" height="174" stroke="none"/>
+      <rect x="0.5" y="0.5" width="173" height="173" fill="none"/>
+    </g>
+    <line id="Line_19" data-name="Line 19" y1="233.5" x2="234" transform="translate(1174 1260)" fill="none" stroke="#f4f4f4" stroke-width="1"/>
+    <line id="Line_20" data-name="Line 20" y1="32" x2="32.5" transform="translate(1411.5 1225.5)" fill="none" stroke="#f4f4f4" stroke-width="1" stroke-dasharray="5 5"/>
+    <path id="Path_23" data-name="Path 23" d="M5.639,32.595,37,0" transform="translate(1135 1495.5)" fill="none" stroke="#f4f4f4" stroke-width="1" stroke-dasharray="5 5"/>
+  </g>
+</svg>

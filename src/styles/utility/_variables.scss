@@ -1,0 +1,22 @@
+$color1: #1A1A1A;
+$color2: #E6E6E6;
+
+$white: #fff;
+$black: #000;
+
+$col: 100% / 12;
+$col-vw: 100vw / 12;
+
+
+$transition: 0.5s cubic-bezier(0.14, 0.73, 0.39, 0.89);
+$transition-slow: 0.9s cubic-bezier(0.14, 0.73, 0.39, 0.89);
+
+
+$desktop-break: 1920px;
+$laptop-break-lrg: 1550px;
+$laptop-break: 1440px;
+$laptop-break-sml: 1280px;
+$tablet-break: 1120px;
+$tablet-break-sml: 768px;
+$mobile-break: 600px;
+$mobile-break-sml: 340px;

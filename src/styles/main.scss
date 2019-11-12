@@ -1,0 +1,22 @@
+@import "utility/normalize";
+@import "utility/variables";
+
+// typography
+@import "utility/type-stack";
+
+// import mixin
+@import "utility/mixins";
+
+/*********************
+IMPORT PAGES
+*********************/
+// styles in base.scss
+@import "pages/base";
+
+.homepage {
+	@import "pages/homepage";
+}
+
+.success {
+	@import "pages/success";
+}

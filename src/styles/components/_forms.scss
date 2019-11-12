@@ -1,0 +1,94 @@
+input,
+select,
+textarea,
+.select-wrapper  {
+	width: 100%;
+	padding: 1rem 1.25rem;
+	border: 0;
+	background: $white;
+	border-radius: 0;
+	margin-bottom: 1rem;
+	font-family: $sans1;
+	font-weight: 400;
+
+	&::placeholder {
+	    color: $color1;
+	}
+
+	&.half {
+		width: calc(50% - 0.75rem);
+
+        @media (max-width:$mobile-break) {
+           width: 100%;
+        }
+	}
+}
+
+select {
+	margin-bottom: 0;
+    padding: 0;
+}
+
+.other {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}
+
+.privacyPolicyInput {
+	margin-bottom: 2rem;
+	margin-bottom: 2rem;
+	input {
+		display: none;
+
+		&:checked {
+			+label {
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	label {font-family: $sans1;
+		font-size: 0.7rem;
+        display: block;
+        position: relative;
+        padding-left: 2rem;
+        margin-right: 0;
+        font-weight: 300 ;
+        color: $color1;
+
+        a {
+        	color: $color1;
+        	font-weight: 400;
+        }
+
+        &::before {
+            width: 1rem;
+            height: 1rem;
+            content: '';
+            position: absolute;
+            border: 1px solid $color1;
+            background: transparent;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        &::after {
+            width: 1rem;
+            height: 1rem;
+            content: '';
+            position: absolute;
+            background: $color1;
+            top: 50%;
+            left: 1px;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: $transition;
+        }
+    }
+}

@@ -1,0 +1,346 @@
+.hero {
+	min-height: calc(100vh - 100px);
+	margin-top: 100px;
+	overflow: hidden;
+	position: relative;
+
+	@media (max-width:$tablet-break) {
+       min-height: auto;
+    }
+
+    @media (max-width:$mobile-break) {
+       margin-top: 60px;
+       padding-bottom: $col-vw * 6;
+    }
+	.row-inner {
+		padding: 0 $col-vw;
+	}
+
+	.text {
+		width: $col-vw * 4;
+		z-index:2;
+		position: relative;
+
+		@media (max-width:$laptop-break) {
+	      width: $col-vw * 5;
+	    }
+
+	    @media (max-width:$mobile-break) {
+       width: 100%;
+    }
+
+		h1 {
+			margin-bottom: 2rem;
+			width: 53.25rem;
+			position: relative;
+
+			border-bottom: 1px solid $color1;
+			padding-bottom: 1rem;
+			@include bottom-right-black;
+			@include bottom-left-black;
+
+			@media (max-width:$mobile-break) {
+       width: 100%;
+    }
+
+			span {
+				color: $white;
+				text-shadow: -1px -1px 0 $color1, 1px -1px 0 $color1, -1px 1px 0 $color1, 1px 1px 0 $color1;
+			}
+		}
+
+		p,
+		.button {
+			margin-left: $col-vw/2;
+
+			@media (max-width:$mobile-break) {
+       margin-left: 0;
+    }
+		}
+	}
+
+	&::before {
+		content: '';
+		width: $col-vw * 8;
+		height: $col-vw * 6;
+		background-image: url('../../images/canada-map.png');
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		z-index:1;
+		transform: translateY(-50%);
+
+		@media (max-width:$tablet-break) {
+      width: $col-vw * 10;
+		height: $col-vw * 8;
+		right: -$col-vw;
+    }
+
+    @media (max-width:$mobile-break) {
+      width: $col-vw * 18;
+		height: $col-vw * 10;
+		top: initial;
+		right: initial;
+		left: 50%;
+		bottom: -$col-vw;
+		transform: translateX(-50%);
+    }
+	}
+}
+
+.collaboration {
+	padding-left: $col-vw * 3;
+	padding-right: $col-vw * 2.5;
+
+	@media (max-width:$laptop-break) {
+        padding-left: $col-vw * 2;
+			padding-right: $col-vw * 2;
+    }
+
+    @media (max-width:$tablet-break) {
+        padding-left: $col-vw;
+			padding-right: $col-vw;
+    }
+
+     @media (max-width:$mobile-break) {
+       padding-top:$col-vw * 2;
+       padding-bottom:$col-vw * 2;
+    }
+
+    .row-inner  {
+    	@media (max-width:$mobile-break) {
+       flex-wrap: wrap-reverse;
+    }
+    }
+
+	.col {
+		&.image {
+			width: $col-vw*3;
+			padding-right: $col-vw;
+
+			@media (max-width:$laptop-break) {
+        width: $col-vw*4;
+    }
+
+			@media (max-width:$tablet-break) {
+        width: $col-vw*5;
+    }
+
+    @media (max-width:$mobile-break) {
+       width: 100%;
+       padding: 0 $col-vw*2;
+       @include margin-top($col-vw/2);
+    }
+
+			img {
+				width: 100%;
+			}
+		}
+		&.text {
+			width: $col-vw*3.5;
+
+			@media (max-width:$laptop-break) {
+        width: $col-vw*4;
+    }
+
+			@media (max-width:$tablet-break) {
+        width: $col-vw*5;
+    }
+
+    @media (max-width:$mobile-break) {
+       width: 100%;
+    }
+
+			h2 {
+				&::after {
+					background-image: url('../../images/bottom-right-white.svg');
+				}
+
+				&::before {
+					background: transparentize($color2, 0.25);
+				}
+			}
+		}
+	}
+}
+
+.action-plan {
+	padding-left: $col-vw * 1.5;
+	padding-right: $col-vw * 1.5;
+
+	@media (max-width:$laptop-break) {
+	       padding-left: $col-vw * 1;
+			padding-right: $col-vw * 1;
+	    }
+
+	.row-inner {
+		display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+	}
+	.col {
+		&.card {
+			@include margin-top($col-vw/2);
+			@include margin-bottom($col-vw/2);
+			width: $col-vw * 2.5;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid $color1;
+
+			 @media (max-width:$tablet-break) {
+       width: $col-vw * 3;
+    }
+
+    @media (max-width:$mobile-break) {
+       width: 100%;
+       border-bottom: 0;
+       padding-bottom: 0;
+
+       &:last-child {
+       	border-bottom: 1px solid $color1;
+       }
+    }
+		}
+
+		&.text {
+			padding: 0 $col-vw * 2.75;
+
+			@media (max-width:$laptop-break) {
+	       padding: 0 $col-vw * 2.5;
+	    }
+
+	    @media (max-width:$mobile-break) {
+       width: 100%;
+       padding: 0 ;
+    }
+		}
+	}
+}
+
+.team {
+	padding-left: $col-vw * 3;
+	padding-right: $col-vw * 3;
+
+	@media (max-width:$mobile-break) {
+       padding-left: $col-vw ;
+	padding-right: $col-vw ;
+    }
+
+	.col {
+		width: 100%;
+	}
+
+	.team-members {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		@media (max-width:$mobile-break) {
+      flex-wrap: wrap;
+    }
+
+
+		.team-member {
+			width: $col-vw * 1.25;text-align: center;
+
+			@media (max-width:$mobile-break) {
+      width: 100%;
+      @include margin-bottom($col-vw/2);
+
+      &:last-child {
+      	margin-bottom: 0;
+      }
+    }
+
+			.image {
+				margin-bottom: 1rem;
+
+				@media (max-width:$mobile-break) {
+     padding: 0 $col-vw * 3;
+    }
+
+				img {
+					width: 100%;
+					height: auto; 
+					border-radius: 100%;
+					filter: grayscale(100%);
+				}
+			}
+
+			.name {
+				font-weight: 900;
+				font-family: $sans1;
+			}
+
+			a {
+				font-size: 0.9rem;
+				color: $color1;
+			}
+		}
+	}
+}
+
+.partners {
+	padding-left: $col-vw * 3;
+	padding-right: $col-vw * 3;
+
+@media (max-width:$mobile-break) {
+       padding-left: $col-vw ;
+	padding-right: $col-vw ;
+    }
+
+	.col {
+		width: 100%;
+
+		.partners-wrapper {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: $col-vw / 4;
+
+			.partner {
+				background: $color1;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+				
+			}
+		}
+	}
+}
+
+.stay-connected {
+	background: $color2;
+	padding-left: $col-vw * 4.25;
+	padding-right: $col-vw * 4.25;
+
+	@media (max-width:$laptop-break) {
+	       padding-left: $col-vw * 3.5;
+	padding-right: $col-vw * 3.5;
+	    }
+
+	    @media (max-width:$mobile-break) {
+       padding-left: $col-vw ;
+	padding-right: $col-vw ;
+    }
+
+	h2 {
+		&::before {
+			background: transparentize($color1, 0.25);
+		}
+	}
+
+	form {
+		margin-top: 2rem;
+		
+		.form-fields {
+			display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		}
+	}
+}

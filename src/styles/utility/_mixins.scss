@@ -1,0 +1,54 @@
+@mixin padding-top($pad) {
+    padding-top: $pad ;
+
+    @media (max-width:$tablet-break) {
+        padding-top: ($pad * 1.5) ;
+    }
+
+
+    @media (max-width:$mobile-break) {
+        padding-top: ($pad * 2) ;
+    }
+}
+
+// padding bottom
+@mixin padding-bottom($pad) {
+    padding-bottom: $pad ;
+
+    @media (max-width:$tablet-break) {
+        padding-bottom: ($pad * 1.5) ;
+    }
+
+
+    @media (max-width:$mobile-break) {
+        padding-bottom: ($pad * 2) ;
+    }
+}
+
+// margin top
+@mixin margin-top($margin) {
+    margin-top: $margin ;
+
+    @media (max-width:$tablet-break) {
+        margin-top: ($margin * 1.5) ;
+    }
+
+
+    @media (max-width:$mobile-break) {
+        margin-top: ($margin * 2) ;
+    }
+}
+
+// margin bottom
+@mixin margin-bottom($margin) {
+    margin-bottom: $margin ;
+
+    @media (max-width:$tablet-break) {
+        margin-bottom: ($margin * 1.5) ;
+    }
+
+
+    @media (max-width:$mobile-break) {
+        margin-bottom: ($margin * 2) ;
+    }
+}

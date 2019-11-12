@@ -1,0 +1,33 @@
+.row {
+	&.top {
+		@include padding-top($col-vw);
+	}
+	&.bottom {
+		@include padding-bottom($col-vw);
+	}
+	&.top-half {
+		@include padding-top($col-vw/2);
+	}
+	&.bottom-half {
+		@include padding-bottom($col-vw/2);
+	}
+
+	&.dark {
+		background: $color1;
+		p,
+		h1,
+		h2,
+		h3 {
+			color: $color2;
+			border-color: $color2;
+		}
+	}
+	.row-inner {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		 @media (max-width:$tablet-break) {
+        flex-wrap: wrap;
+    }
+	}
+}
