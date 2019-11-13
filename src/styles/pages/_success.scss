@@ -1,6 +1,8 @@
 #success {
 	padding-left: $col-vw * 4;
 	padding-right: $col-vw * 4;
+	@include padding-top($col-vw * 2);
+	@include padding-bottom($col-vw * 2);
 
 	@media (max-width:$tablet-break) {
       padding-left: $col-vw * 2;
