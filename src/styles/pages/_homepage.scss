@@ -18,7 +18,7 @@
 
 	.text {
 		width: $col-vw * 4;
-		z-index:2;
+		z-index:4;
 		position: relative;
 
 		@media (max-width:$laptop-break) {
@@ -34,7 +34,7 @@
 			width: 53.25rem;
 			position: relative;
 
-			border-bottom: 1px solid $color1;
+			border-bottom: 1px solid $color3;
 			padding-bottom: 1rem;
 			@include bottom-right-black;
 			@include bottom-left-black;
@@ -44,8 +44,7 @@
     }
 
 			span {
-				color: $white;
-				text-shadow: -1px -1px 0 $color1, 1px -1px 0 $color1, -1px 1px 0 $color1, 1px 1px 0 $color1;
+				color: $color3;
 			}
 		}
 
@@ -59,11 +58,36 @@
 		}
 	}
 
+	&::after {
+		content: '';
+		width: $col-vw * 3.5;
+		height: 100%;
+		background: linear-gradient(to right, $white 0%, rgba(255,255,255,0) 100%);
+		position: absolute;
+		right: $col-vw * 4.5;
+		top: 0;
+		z-index:2;
+
+			@media (max-width:$tablet-break) {
+      right: $col-vw * 5.5;
+    }
+
+       @media (max-width:$mobile-break) {
+       	width: 100%;
+       	height: $col-vw * 5;
+       	right: 0;
+       	top: initial;
+       	bottom: $col-vw * 4;
+       	background: linear-gradient(to bottom, $white 0%, rgba(255,255,255,0) 100%);
+       }
+	}
+
 	&::before {
+		opacity: 0.75;
 		content: '';
 		width: $col-vw * 8;
 		height: $col-vw * 6;
-		background-image: url('../../images/canada-map.png');
+		background-image: url('../../images/canada-map-2.png');
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -155,9 +179,9 @@
     }
 
 			h2 {
-				&::after {
-					background-image: url('../../images/bottom-right-white.svg');
-				}
+				// &::after {
+				// 	background-image: url('../../images/bottom-right-white.svg');
+				// }
 
 				&::before {
 					background: transparentize($color2, 0.25);
@@ -244,7 +268,8 @@
 
 
 		.team-member {
-			width: $col-vw * 1.25;text-align: center;
+			width: $col-vw * 1.5;
+			text-align: center;
 
 			@media (max-width:$mobile-break) {
       width: 100%;
@@ -257,6 +282,7 @@
 
 			.image {
 				margin-bottom: 1rem;
+				padding: 0 $col-vw * 0.25;
 
 				@media (max-width:$mobile-break) {
      padding: 0 $col-vw * 3;
@@ -273,11 +299,16 @@
 			.name {
 				font-weight: 900;
 				font-family: $sans1;
+				
 			}
 
 			a {
 				font-size: 0.9rem;
-				color: $color1;
+				text-decoration: underline;
+				color: $color3;
+				text-align: center;
+word-break: break-all;
+
 			}
 		}
 	}
@@ -330,7 +361,7 @@
 
 	h2 {
 		&::before {
-			background: transparentize($color1, 0.25);
+			background: transparentize($color1, 0.75);
 		}
 	}
 
