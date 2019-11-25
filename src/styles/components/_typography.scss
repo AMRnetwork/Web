@@ -248,8 +248,8 @@ color: $color3;
 			border-radius: 100%;
 
 			@media (max-width:$tablet-break) {
-      width: $col-vw * 2.5;
-			height: $col-vw * 2.5;
+      width: $col-vw * 1.5;
+			height: $col-vw * 1.5;
     }
 
 			@media (max-width:$mobile-break) {
