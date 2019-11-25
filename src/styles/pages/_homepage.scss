@@ -212,6 +212,11 @@
 			padding-right: $col-vw * 0.5;
 	    }
 
+	    @media (max-width:$mobile-break) {
+	       padding-left: $col-vw;
+			padding-right: $col-vw;
+	    }
+
 	.row-inner {
 		display: flex;
     justify-content: space-between;
@@ -238,12 +243,10 @@
     }
 
     @media (max-width:$mobile-break) {
-       
-       
-       padding-bottom: 0;
-
-       
-    }
+	       padding-left: 0;
+	       padding-right: 0;
+	       padding-bottom: 0;
+	    }
 		}
 
 		&.text {

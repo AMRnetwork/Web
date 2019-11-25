@@ -253,8 +253,8 @@ color: $color3;
     }
 
 			@media (max-width:$mobile-break) {
-      width: $col-vw * 3;
-			height: $col-vw * 3;
+      width: $col-vw * 2.75;
+			height: $col-vw * 2.75;
     }
 		}
 	}
