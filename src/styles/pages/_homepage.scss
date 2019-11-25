@@ -299,8 +299,8 @@
 
 
 		.team-member {
-			width: calc((100% / 3) - #{$col-vw/2});
-			text-align: center;
+			width: calc((100% / 3) - #{$col-vw/4});
+			text-align: left;
 
 			@media (max-width:$mobile-break) {
       width: 100%;
@@ -313,10 +313,11 @@
 
 			.image {
 				margin-bottom: 1rem;
-				padding: 0 $col-vw * 0.5;
+				padding-right: $col-vw * 1.5;
 
 				@media (max-width:$mobile-break) {
-     padding: 0 $col-vw * 3;
+     				padding-right: $col-vw * 1.5;
+
     }
 
 				img {
@@ -349,7 +350,7 @@
 			.name {
 				font-weight: 900;
 				font-family: $sans1;
-				
+				margin-bottom: 0.5rem;
 			}
 
 			a {
