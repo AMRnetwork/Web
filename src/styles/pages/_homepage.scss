@@ -291,6 +291,8 @@
 	.team-members {
 		display: flex;
 		justify-content: space-between;
+		display: flex;
+		flex-wrap: wrap;
 		width: 100%;
 
 		@media (max-width:$mobile-break) {
@@ -301,10 +303,15 @@
 		.team-member {
 			width: calc((100% / 3) - #{$col-vw/4});
 			text-align: left;
+			@include margin-bottom($col-vw/2);
+
+			@media (max-width:$tablet-break) {
+				width: calc((100% / 2) - #{$col-vw/4}); 
+			}
 
 			@media (max-width:$mobile-break) {
       width: 100%;
-      @include margin-bottom($col-vw/2);
+      
 
       &:last-child {
       	margin-bottom: 0;
@@ -315,10 +322,13 @@
 				margin-bottom: 1rem;
 				padding-right: $col-vw;
 
+				@media (max-width:$tablet-break) {
+     				padding-right: $col-vw * 2.25;
+		    }
+
 				@media (max-width:$mobile-break) {
      				padding-right: $col-vw * 6.25;
-
-    }
+		    }
 
 				img {
 					width: 100%;
